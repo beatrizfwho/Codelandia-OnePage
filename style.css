@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+/* HEADER */
+
+#header {
+    background-color: #D7D5FF;
+    padding: 100px 0px;
+    box-sizing: border-box;
+    
+}
+
+.header-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 100px;
+    flex-wrap: wrap;
+    padding: 0px 40px;
+}
+
+.header-text h1 {
+    font-family: 'Merriweather', sans-serif;
+    font-size: 2.25rem;
+    color: #2B2B2B;
+    font-weight: normal;
+    line-height: 47px;
+    padding-bottom: 17.5px;
+}
+
+.header-text p {
+    font-family: 'Lato', Arial, sans-serif;
+    line-height: 32px;
+    font-size: 1.18rem;
+    padding-bottom: 45px;
+    max-width: 35ch;
+}
+
+.header-button {
+    background-color: #6C63FF;
+    box-shadow: 0px 5px 5px rgba(23, 23, 23, 0.1);
+    border-radius: 5px;
+    padding: 13px 40px;
+    border: 0px;
+    font-family: 'Lato', Arial, sans-serif;
+    color: #fff;
+    font-size: 1.25rem;
+    transition: 0.3s;
+}
+
+.header-button:hover {
+    background-color: #4e44fa;
+}
+
+/* MAIN - CARDS */
+
+#cards {
+    max-width: 1600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 111px;
+    flex-wrap: wrap;
+    margin: 111px auto;
+    box-sizing: border-box;
+}
+
+.card-item {
+    box-sizing: border-box;
+    width: 320px;
+    height: 423px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+
+.card-text h2 {
+    font-family: 'Merriweather';
+    font-size: 1.5rem;
+    font-weight: normal;
+    padding: 24px 0px;
+}
+
+.card-text {
+    padding: 0px 15px;
+}
+
+/*  FOOTER */
+
+footer {
+    background-color: #D7D5FF;
+    box-sizing: border-box;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.footer h3 {
+    font-family: 'Merriweather';
+    font-weight: normal;
+    font-size: 2rem;
+    padding: 60px 0px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input {
+    border: none;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.form-input::placeholder {
+    font-family: 'Lato';
+    font-size: 1.125rem;
+    padding: 5px 5px;
+}
+
+input:focus {
+    outline: 0;
+}
+
+.form-button {
+    background: #6C63FF;
+    border-radius: 5px;
+    border: none;
+    padding: 15px 0px;
+    margin: 30px 0px;
+    font-family: 'Lato';
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: #fff;
+    transition: 0.3s;
+    box-sizing: border-box;
+}
+
+.form-button:hover {
+    background: #4e44fa;
+}
+
+.footer-textarea {
+    padding: 1em;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    outline: none;
+    font-family: 'Lato';
+    font-size: 1.125rem;
+}
+
+/* 
+Screen Size Breakpoints
+
+phones - 600px
+tablets - 768px
+laptops - 992px
+large - 1200px
+*/
+
+@media(max-width: 950px) {
+    #header {
+        padding: 80px 50px;
+    }
+
+    .header-text {
+        max-width: 100%;
+    }
+
+    .header-text p {
+        font-size: 1.12rem;
+        padding-bottom: 20px;
+    }
+
+    .header-button {
+        display: block;
+        padding: 10px 40px;
+        margin: 0 auto;
+    }
+
+    #cards {
+        max-width: 1400px;
+    }
+
+}
+
+@media(min-width: 800px) {
+    .card-item:hover {
+        width: 340px;
+        transition: 0.3s;
+        cursor: pointer;
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.3);
+    }
+}
+
+@media(max-width:630px) {
+    #header {
+        padding: 80px 30px;
+    }
+
+    .header-div {
+        padding: 0px 20px;
+    }
+
+    .header-text h1 {
+        font-size: 1.8rem;
+        line-height: 30px;
+        font-weight: bold;
+    }
+
+    .header-text p {
+        font-size: 1rem;
+    }
+
+    #cards {
+        gap: 50px;
+    }
+}
+
+@media(max-width: 370px) {
+
+    footer {
+        padding: 0px 20px;
+    }
+
+    #cards {
+        padding: 0px 20px;
+    }
+
+   .footer {
+        display: block;
+   }
+}
